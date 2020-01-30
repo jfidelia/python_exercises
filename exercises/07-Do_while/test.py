@@ -10,7 +10,7 @@ import pytest
 @pytest.mark.it("You have a good list numbers with exclamation sign!!! 😃")
 def test_output():
     captured = buffer.getvalue()
-    assert "20 !\n19\n18\n17\n16\n15 !\n14\n13\n12\n11\n10 !\n9\n8\n7\n6\n5 !\n4\n3\n2\n1\nLIFTOFF\n" in captured
+    assert "20!\n19\n18\n17\n16\n15!\n14\n13\n12\n11\n10!\n9\n8\n7\n6\n5!\n4\n3\n2\n1\nLIFTOFF\n" in captured
 
 
 @pytest.mark.it("Declare the variable and asign the value of 20")
