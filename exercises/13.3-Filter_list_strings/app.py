@@ -7,3 +7,7 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+def my_names(item):
+    return item.find('am') != -1
+new_list = list(filter(my_names, names))
+print(new_list)

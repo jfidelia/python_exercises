@@ -12,4 +12,8 @@ tasks = [
 
 
 #Your code go here:
-
+def chores(action):
+    return action["done"] == True
+ 
+new_list = list(filter(chores, tasks))
+print(new_list)
