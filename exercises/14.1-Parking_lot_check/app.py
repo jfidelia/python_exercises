@@ -5,5 +5,9 @@ parking_state = [
 ]
 
 #Your code go here:
+def get_parking_lot():
+    for x in range(0, len(parking_state)):
+        return x
 
+print(get_parking_lot,parking_state)
 
