@@ -18,6 +18,7 @@ def generate_li(item):
     return "<li>" + item["label"] + "</li>"
 
 
+
 array_of_lis = list(map(generate_li,new_list))
 
 string_of_lis = ''.join([str(elem) for elem in array_of_lis]) 
