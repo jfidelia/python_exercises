@@ -15,6 +15,6 @@ def calculateAge(birthDate):
     age = today.year - birthDate.year - ((today.month, today.day) < (birthDate.month, birthDate.day))
     return  age
 
-name_list = list(map(lambda person:  "Hello my name is " + person["name"] + " and I am " + str(calculateAge(person["birthDate"])) + " years old" , people))
-print(name_list)
+name_list = list(map(lambda person:  "Hello my name is " + person["name"] + " and I am " + str(calculateAge(person["birthDate"])) + " years old." , people))
+print(' '.join([str(elem) for elem in name_list]))
 
